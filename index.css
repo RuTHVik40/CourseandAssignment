@@ -1,0 +1,19 @@
+div{
+    margin-left:35%;
+    margin-right:35% ;
+    background: rgba(247, 247, 247, 0.9);
+    text-align: center;
+    margin-top: 13%;
+    height: 320px;align-content: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+body{
+    background-image: url(cbit.jpeg);
+    background-attachment: fixed;
+    background-position:center;
+}
