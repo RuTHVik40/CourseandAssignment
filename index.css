@@ -1,19 +1,122 @@
-div{
-    margin-left:35%;
-    margin-right:35% ;
-    background: rgba(247, 247, 247, 0.9);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-image: url("cbit.jpeg");
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body {
+    background-image: url("cbit.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar Styling */
+/* Navigation Bar Styling */
+nav {
+    background-color: #813f08;
+    padding: 10px 0; /* Increase top/bottom padding for better spacing */
+    margin-bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-top: 13%;
-    height: 320px;align-content: center;
+    border-radius: 8px;
 }
-ul{
-    list-style-type: none;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Center the list items horizontally */
+    padding: 0;
+    margin: 0;
 }
-li{
-    display: inline-block;
+
+nav ul li {
+    margin: 0 15px;  /* Space between buttons */
 }
-body{
-    background-image: url(cbit.jpeg);
-    background-attachment: fixed;
-    background-position:center;
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center; /* Ensures buttons are aligned in the center */
+}
+
+nav ul li a:hover {
+    background-color: #9c4c0a;
+    text-decoration: underline;
+}
+
+/* Optional: To center the button content itself, ensuring equal button sizes */
+nav ul li a button {
+    padding: 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;  /* Adjust padding for better button size */
+}
+
+
+/* Form Container */
+form {
+    background-color: rgb(228, 175, 96);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Form Elements Styling */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="button"] {
+    background-color:  #9c4c0a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form input[type="button"]:hover {
+    background-color: #cc7f27;
+}
+@media (max-width: 768px) {
+    form {
+        width: 90%; /* Makes the form take up more space on smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Stacks navigation items vertically */
+    }
 }
