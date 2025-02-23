@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments - Student Portal</title>
-    <!-- Bootstrap CSS CDN -->
+    <title>Assignments - Course Portal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="n.css" rel="stylesheet">
     <style>
-        /* Custom styling for assignment cards */
         .assignment-card {
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .assignment-card .card-header {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .assignment-card .card-body {
+            font-size: 1rem;
         }
         .assignment-card:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -18,65 +25,43 @@
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CoursePortal</a>
+            <a class="navbar-brand" href="#"><img src="/images/cb.jpeg" style="height: 40px;width: auto;"> CBIT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Assignments</a>
+                        <a class="nav-link active" href="ass.html">Assignments</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="courses.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Title -->
-    <div class="container text-center mt-5">
-        <h1>Your Assignments</h1>
-        <p class="lead">Keep track of your upcoming and past assignments.</p>
-    </div>
-
     <!-- Assignments Section -->
     <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <h2 class="text-center mb-5">Your Assignments</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
             
             <!-- Assignment 1 -->
             <div class="col">
                 <div class="card assignment-card">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="card-title">Data Structures Assignment</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Complete the exercises related to linked lists and trees.</p>
-                        <p><strong>Due Date:</strong> February 20, 2025</p>
-                        <p><strong>Status:</strong> <span class="badge bg-warning">In Progress</span></p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">View Assignment</a>
-                        <a href="#" class="btn btn-success">Submit</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Assignment 2 -->
-            <div class="col">
-                <div class="card assignment-card">
-                    <div class="card-header bg-info text-white">
+                    <div class="card-header bg-primary text-white">
                         <h5 class="card-title">Algorithms Assignment</h5>
                     </div>
                     <div class="card-body">
@@ -86,7 +71,27 @@
                     </div>
                     <div class="card-footer text-center">
                         <a href="#" class="btn btn-primary">View Assignment</a>
+                        <a href="#" class="btn btn-success">Upload</a>
                         <a href="#" class="btn btn-secondary" disabled>Submit</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assignment 2 -->
+            <div class="col">
+                <div class="card assignment-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Web Development Milestone 2</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Complete the frontend for your project and submit screenshots.</p>
+                        <p><strong>Due Date:</strong> February 28, 2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-warning">In Progress</span></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">View Assignment</a>
+                        <a href="#" class="btn btn-success">Upload</a>
+                        <a href="#" class="btn btn-secondary" >Submit</a>
                     </div>
                 </div>
             </div>
@@ -94,17 +99,18 @@
             <!-- Assignment 3 -->
             <div class="col">
                 <div class="card assignment-card">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="card-title">Web Development Assignment</h5>
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Database Management Quiz 2</h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Create a static website with HTML, CSS, and JavaScript.</p>
-                        <p><strong>Due Date:</strong> March 1, 2025</p>
-                        <p><strong>Status:</strong> <span class="badge bg-warning">In Progress</span></p>
+                        <p class="card-text">Study for the upcoming quiz covering SQL and NoSQL topics.</p>
+                        <p><strong>Due Date:</strong> March 3, 2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-danger">Not Started</span></p>
                     </div>
                     <div class="card-footer text-center">
                         <a href="#" class="btn btn-primary">View Assignment</a>
-                        <a href="#" class="btn btn-success">Submit</a>
+                        <a href="#" class="btn btn-success">Upload</a>
+                        <a href="#" class="btn btn-secondary" >Submit</a>
                     </div>
                 </div>
             </div>
@@ -112,17 +118,18 @@
             <!-- Assignment 4 -->
             <div class="col">
                 <div class="card assignment-card">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="card-title">Database Management Assignment</h5>
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Python Programming Project</h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Design a database schema and write SQL queries for given data.</p>
-                        <p><strong>Due Date:</strong> March 5, 2025</p>
-                        <p><strong>Status:</strong> <span class="badge bg-danger">Not Started</span></p>
+                        <p class="card-text">Create a data analysis project using Python libraries like Pandas and Matplotlib.</p>
+                        <p><strong>Due Date:</strong> March 10, 2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-success">Completed</span></p>
                     </div>
                     <div class="card-footer text-center">
                         <a href="#" class="btn btn-primary">View Assignment</a>
-                        <a href="#" class="btn btn-success">Submit</a>
+                        <a href="#" class="btn btn-success">Upload</a>
+                        <a href="#" class="btn btn-secondary" disabled>Submit</a>
                     </div>
                 </div>
             </div>
@@ -132,12 +139,11 @@
 
     <!-- Footer Section -->
     <footer class="text-center mt-5 py-3 bg-light">
-        <p>&copy; 2025 CoursePortal. All rights reserved.</p>
+        <p>&copy; 2025 CBIT. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies (Popper.js and Bootstrap JS) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
 </body>
 </html>
